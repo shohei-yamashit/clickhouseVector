@@ -9,6 +9,7 @@ WITH hassubstr_table AS (
     WHERE
         query LIKE '%hasSubstr%'
         AND query NOT LIKE '%system.query_log%'
+        AND query_duration_ms > 0
     ORDER BY
         query_start_time DESC
     LIMIT 4
@@ -24,6 +25,7 @@ like_table AS (
     WHERE
         query LIKE '%LIKE%'
         AND query NOT LIKE '%system.query_log%'
+        AND query_duration_ms > 0
     ORDER BY
         query_start_time DESC
     LIMIT 4
