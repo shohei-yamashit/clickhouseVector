@@ -1,0 +1,1 @@
+INSERT INTO mame_db.vector_sample FORMAT CSV

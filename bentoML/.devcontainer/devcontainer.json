@@ -1,0 +1,20 @@
+{
+  "name": "Dev Container",
+  "dockerComposeFile": [
+    "../../compose.yaml"
+  ],
+  "service": "bentoml",
+  "runServices": [
+    "bentoml"
+  ],
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  },
+  "postStartCommand": "apt-get update && apt-get install git -y && git config --global --add safe.directory ${containerWorkspaceFolder}"
+}

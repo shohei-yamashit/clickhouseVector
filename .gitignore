@@ -1,0 +1,4 @@
+datagen/text
+**/__pycache__/*
+**/.venv
+**/*.csv

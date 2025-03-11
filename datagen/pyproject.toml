@@ -1,0 +1,16 @@
+[project]
+name = "datagen"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fugashi>=1.4.0",
+    "ipykernel>=6.29.5",
+    "protobuf>=6.30.0",
+    "pydantic>=2.10.6",
+    "transformers>=4.49.0",
+    "unidic-lite>=1.0.8",
+    "numpy<2",
+    "sentence-transformers>=3.4.1",
+]
